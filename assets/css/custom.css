@@ -1,0 +1,34 @@
+/* Paleta personalizada: Grises oscuros y Azul Marino */
+:root {
+    --bs-primary: #1b263b; /* Azul marino profundo y elegante */
+    --bs-primary-rgb: 27, 38, 59;
+    --bs-dark: #0d1b2a;    /* Gris muy oscuro / Azul noche */
+    --bs-light: #f8f9fa;   /* Fondo general limpio */
+}
+
+/* Fondo principal y transiciones suaves */
+body {
+    background-color: var(--bs-light);
+    color: #334155; /* Texto principal en gris oscuro legible */
+}
+
+/* Ajuste visual para el Navbar */
+.navbar {
+    background-color: var(--bs-dark) !important;
+}
+
+/* Efecto hover suave para las tarjetas */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 0.75rem; /* Bordes más redondeados y modernos */
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Ajuste de sección Hero inicial */
+header#inicio {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%) !important;
+}
