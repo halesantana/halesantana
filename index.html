@@ -139,29 +139,64 @@
     <section id="proyectos" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center fw-bold mb-5">Proyectos Destacados</h2>
-            <div class="row g-4">
-                <!-- Proyecto 1: Sistema de Gestión Farmacia -->
-                <div class="col-lg-12">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
                     <div class="card shadow-sm border-0 p-4">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <h3 class="text-primary">Sistema de Gestión Controlados</h3>
-                                <p class="text-muted">Desarrollado para optimizar el control, despacho y trazabilidad de medicamentos controlados en el sector salud público.</p>
-                                <ul class="list-unstyled">
-                                    <li><i class="fa-solid fa-check text-success me-2"></i> Gestión centralizada de pacientes y medicamentos controlados.</li>
-                                    <li><i class="fa-solid fa-check text-success me-2"></i> Trazabilidad por establecimientos rurales.</li>
-                                    <li><i class="fa-solid fa-check text-success me-2"></i> Reportes automatizados y exportación a Excel.</li>
+                        <div class="row align-items-center g-4">
+                            <!-- Columna de Descripción -->
+                            <div class="col-md-5">
+                                <h3 class="text-primary mb-3">Sistema de Gestión de Farmacia</h3>
+                                <p class="text-muted">Plataforma web a medida para optimizar el control, despacho y trazabilidad de medicamentos controlados en el sector salud.</p>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Control de stock y pacientes.</li>
+                                    <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Trazabilidad por establecimientos.</li>
+                                    <li><i class="fa-solid fa-check text-success me-2"></i> Historial y exportación a Excel.</li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
-                                <!-- Aquí irán tus imágenes. Te recomiendo usar un carrusel de Bootstrap o simplemente 3 imágenes -->
-                                <img src="assets/img/login.png" class="img-fluid rounded shadow" alt="Login del sistema">
-                                <img src="assets/img/preparacion-despacho.png" class="img-fluid rounded shadow" alt="Selección de medicamento a despachar">
-                                <img src="assets/img/medicamento-seleccionado.png" class="img-fluid rounded shadow" alt="Selección de paciente">
-                                <img src="assets/img/por-despachar.png" class="img-fluid rounded shadow" alt="Registro Despachos">
-                                <img src="assets/img/pacientes.png" class="img-fluid rounded shadow" alt="Pacientes">
-                                <img src="assets/img/registrar-paciente.png" class="img-fluid rounded shadow" alt="Registro Farmacia">
-                                <img src="assets/img/medicamentos.png" class="img-fluid rounded shadow" alt="Registro Medicamentos">
+                            
+                            <!-- Columna del Carrusel de Imágenes -->
+                            <div class="col-md-7">
+                                <div id="carouselFarmacia" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <!-- Imagen 1: Login -->
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/login.png" class="d-block w-100" alt="Login del Sistema">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-1">
+                                                <p class="mb-0 small">Acceso seguro con credenciales</p>
+                                            </div>
+                                        </div>
+                                        <!-- Imagen 2: Despacho -->
+                                        <div class="carousel-item">
+                                            <img src="assets/img/medicamento-seleccionado.png" class="d-block w-100" alt="Registro de Despacho">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-1">
+                                                <p class="mb-0 small">Registro mensual de entrega</p>
+                                            </div>
+                                        </div>
+                                        <!-- Imagen 3: Historial -->
+                                        <div class="carousel-item">
+                                            <img src="assets/img/por-despachar.png" class="d-block w-100" alt="Historial y Reportes">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-1">
+                                                <p class="mb-0 small">Historial y exportación a Excel</p>
+                                            </div>
+                                        </div>
+                                        <!-- Imagen 4: Pacientes -->
+                                        <div class="carousel-item">
+                                            <img src="assets/img/pacientes.png" class="d-block w-100" alt="Gestión de Pacientes">
+                                            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-1">
+                                                <p class="mb-0 small">Administración de pacientes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Botones de navegación del carrusel -->
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFarmacia" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFarmacia" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
