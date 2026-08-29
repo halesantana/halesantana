@@ -32,3 +32,9 @@ body {
 header#inicio {
     background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%) !important;
 }
+/* Altura uniforme y elegante para las capturas en los carruseles */
+.carousel-item img {
+    max-height: 400px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
